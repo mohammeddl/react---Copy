@@ -25,6 +25,7 @@ simpleGit().add([FILE_PATH]);
 simpleGit().commit(DATE)
 
 
+console.log(date);
 return
   makeCommit(n-1);
 }
