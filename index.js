@@ -22,7 +22,7 @@ fs.writeFileSync(FILE_PATH,DATE);
 process.env.GIT_AUTHOR_DATE = DATE;
 process.env.GIT_COMMITTER_DATE = DATE;
 simpleGit().add([FILE_PATH]);
-simpleGit().commit(DATE);
+simpleGit().commit(DATE)
 
 
 console.log(date);
