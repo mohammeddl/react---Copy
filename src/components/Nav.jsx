@@ -115,7 +115,7 @@ export default function Nav() {
 
             <div className="relative">
               <Link
-                to="../login/loginyregistro.html"
+                to="../login"
                 className="text-neutral-light text-sm font-extrabold no-underline flex items-center gap-1 cursor-pointer transition-colors duration-150 hover:text-accent"
               >
                 <img className="w-5 h-5" src={usuario} alt="identificate" />

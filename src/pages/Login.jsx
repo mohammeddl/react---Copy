@@ -1,5 +1,21 @@
-import "../components/styles/Login.css";
+import { useState, useEffect } from 'react';
+import '../components/styles/Login.css';
+
 export default function Login() {
+  const [formVisible, setFormVisible] = useState(false);
+  const [overlayVisible, setOverlayVisible] = useState(false);
+
+  useEffect(() => {
+    setOverlayVisible(false);
+    setFormVisible(false);
+  }, []);
+
+  const toggleForm = () => {
+    setFormVisible(!formVisible);
+    setOverlayVisible(!overlayVisible);
+  };
+
+  // JSX
   return (
     <div>
       <main className='main'>
@@ -23,7 +39,8 @@ export default function Login() {
                   <button
                     className='registro_no_registrado'
                     id='boton_registro'
-                    name='registro'>
+                    name='registro'
+                    onClick={toggleForm}>
                     Regístrate
                   </button>
                 </div>
@@ -36,14 +53,15 @@ export default function Login() {
                   <button
                     className='inicio_sesion_registrado'
                     id='boton_inicio_sesion'
-                    name='iniciar'>
+                    name='iniciar'
+                    onClick={toggleForm}>
                     Iniciar sesión
                   </button>
                 </div>
               </div>
 
               <div
-                className='formularios_opciones-usuario'
+                className={`formularios_opciones-usuario ${formVisible ? 'Left' : 'Right'}`}
                 id='formularios_opciones-usuario'>
                 <div className='formulario_inicio_sesion'>
                   <h2 className='titulo_formulario'>Iniciar sesión</h2>
@@ -145,6 +163,12 @@ export default function Login() {
           </section>
         </div>
       </main>
+
+      {/* Overlay for form */}
+      <div
+        className={`cta-blur-overlay ${overlayVisible ? '' : 'hidden'}`}
+        onClick={toggleForm}
+      ></div>
     </div>
   );
 }
