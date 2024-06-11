@@ -1,9 +1,9 @@
-
+import "./styles/Form.css";
 const Form = ({ toggleForm }) => {
   return (
-    <section className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-neutral-light z-10000 w-3/4 max-w-lg p-5 rounded-lg shadow-lg">
-      <article className="flex flex-col gap-2">
-        <div className="text-center">
+    <section className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-neutral-light z-10000 w-3/4 max-w-lg p-5 rounded-lg shadow-lg ">
+      <article className="flex flex-col gap-2 cta-form-content">
+        <div className="cta-form-text">
           <h2 className="text-2xl font-bold text-primary">
             Pedir Presupuesto y te contestamos en el momento
           </h2>
@@ -11,7 +11,7 @@ const Form = ({ toggleForm }) => {
 
         <form
           id="cta-form"
-          className="grid grid-cols-2 gap-2"
+          className="grid grid-cols-2 gap-2 cta-input-wrapper "
           action="https://formspree.io/f/xbjqawaz"
           method="POST"
         >
@@ -105,9 +105,9 @@ const Form = ({ toggleForm }) => {
             ></textarea>
           </div>
 
-          <div className="col-span-2 flex flex-col gap-2">
+          <div className="col-span-2 cta-buttons flex flex-col gap-2">
             <input
-              className="bg-accent text-neutral-light p-2 rounded-lg cursor-pointer transition-transform duration-200 hover:scale-105"
+              className="cta-submit bg-accent text-neutral-light p-2 rounded-lg cursor-pointer transition-transform duration-200 hover:scale-105"
               type="submit"
               value="Enviar"
             />
