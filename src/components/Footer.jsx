@@ -1,3 +1,5 @@
+import "./styles/Footer.css";
+import logo from "../assets/logo.png";
 export default function Footer() {
   return (
     <>
@@ -89,8 +91,8 @@ export default function Footer() {
               <div className='logo-wrapper-footer'>
                 <a href='index.html'>
                   <img
-                    className='logo'
-                    src='assets/img/logo/logo.png'
+                    className='h-16 cursor-pointer transition-transform duration-200 hover:scale-105'
+                    src={logo}
                     alt='logo'
                   />
                 </a>

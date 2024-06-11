@@ -22,43 +22,12 @@
      }
    
 
-.contenido-header
-
-    {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      color: var(--primario);
-          margin-right: 90px;
-    }
-
-.icono-menu-lateral
-    {
-      width: 30px;
-      height: 40px;
-      cursor: pointer;
-    }
-
-.logo 
-    {
-      width: 200px;
-      height: 70px;
-      cursor: pointer;
-      transition: .2s;
-    margin-left: 70px;
-    }
-
 .logo:hover 
     {
       transform: scale(1.04);
     }
 
-.opciones-header
-    {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
+
 
 .opciones-header a 
     {
