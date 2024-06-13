@@ -30,7 +30,7 @@
     margin: 0;
     text-align: center;
   }
-  
+
   /************************ Slice Media query para pantallas pequeñas************  */
   @media (max-width: 768px) {
     .slice.triangle {
