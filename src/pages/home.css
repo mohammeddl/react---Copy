@@ -479,6 +479,9 @@ width: 80px;
   .slice.triangle h1 {
     font-size: 14px;
   }
+  .accordion-item-header{
+    font-size: 18px;
+  }
 }
 
 /*******************************MEDIA RESPONSIVE CARDS**********/
@@ -523,6 +526,12 @@ width: 80px;
   @media screen and (max-width: 768px) {
     .column {
       flex-basis: calc(50% - 20px); 
+    }
+    .column p{
+      font-size: 12px;
+    }
+    .column h4{
+      font-size: 14px;
     }
     .container {
       width: 100%; 

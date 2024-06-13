@@ -58,7 +58,7 @@ export default function Nav() {
 
             <div className="relative">
               <Link
-                to="/categorias/servicios.html"
+                to="servicios"
                 className="text-neutral-light text-sm font-extrabold no-underline flex items-center gap-1 cursor-pointer transition-colors duration-150 hover:text-accent"
               >
                 <div className="relative flex gap-1">
@@ -115,7 +115,7 @@ export default function Nav() {
 
             <div className="relative">
               <Link
-                to="../login"
+                to="/login"
                 className="text-neutral-light text-sm font-extrabold no-underline flex items-center gap-1 cursor-pointer transition-colors duration-150 hover:text-accent"
               >
                 <img className="w-5 h-5" src={usuario} alt="identificate" />
@@ -127,7 +127,7 @@ export default function Nav() {
 
             <div className="relative">
               <Link
-                to="../categorias/servicios.html"
+                to="#"
                 className="text-neutral-light text-sm font-extrabold no-underline flex items-center gap-1 cursor-pointer transition-colors duration-150 hover:text-accent"
               >
                 <img className="w-5 h-5" src={carro} alt="compra" />
@@ -165,7 +165,7 @@ export default function Nav() {
                 <button
                   type="button"
                   onClick={toggleNavbar}
-                  className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-blue-300 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                  className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                 >
                   <span className="sr-only">Close main menu</span>
                   <svg
@@ -195,19 +195,25 @@ export default function Nav() {
                   Home
                 </Link>
                 <Link
-                  to="/about"
+                  to="/Servicios"
                   className="text-gray-300 hover:bg-blue-500 hover:text-white px-3 py-2 rounded-md text-base font-medium"
                 >
-                  About
+                  Servicios
                 </Link>
                 <Link
-                  to="/services"
+                  to="/login"
                   className="text-gray-300 hover:bg-blue-500 hover:text-white px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Services
+                  Identifícate
                 </Link>
+                <button
+                  onClick={toggleForm}
+                  className="text-gray-300 hover:bg-blue-500 hover:text-white px-3 py-2 rounded-md text-base font-medium flex itemes-end"
+                >
+                  Pedir Presupuesto
+                </button>
                 <Link
-                  to="/contact"
+                  to="/login"
                   className="text-gray-300 hover:bg-blue-500 hover:text-white px-3 py-2 rounded-md text-base font-medium"
                 >
                   Contact

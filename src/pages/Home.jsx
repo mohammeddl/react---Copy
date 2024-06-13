@@ -145,7 +145,7 @@ const Home = () => {
 
       <section className="section-informacionweb">
         <div className="columnas">
-          <div className="column">
+          <div className="column ">
             <img className="iconos" src={desarrolloWeb} alt="Diseño y Desarrollo Web Profesional"/>
             <h4>Diseño y Desarrollo Web Profesional</h4>
             <p>Creamos sitios web profesionales con un diseño atractivo y funcionalidades avanzadas adaptadas a sus necesidades específicas.</p>
@@ -165,22 +165,22 @@ const Home = () => {
             <h4>Optimización para SEO</h4>
             <p>Optimizamos su sitio web para mejorar su ranking en motores de búsqueda, aumentando su visibilidad y atrayendo más clientes potenciales.</p>
           </div>
-          <div className="column">
+          <div className="column hidden md:block">
             <img className="iconos" src={blog} alt="Diseño Responsive para Tablet y Móvil"/>
             <h4>Diseño Responsive para Tablet y Móvil</h4>
             <p>Nuestros diseños se adaptan a la perfección en dispositivos móviles y tablets, garantizando una excelente experiencia de usuario en cualquier plataforma.</p>
           </div>
-          <div className="column">
+          <div className="column hidden md:block">
             <img className="iconos" src={accesibilidad} alt="Accesibilidad de Todos los Usuarios"/>
             <h4>Accesibilidad de Todos los Usuarios</h4>
             <p>Nos aseguramos de que su sitio web sea accesible para todos los usuarios, cumpliendo con los estándares de accesibilidad web.</p>
           </div>
-          <div className="column">
+          <div className="column hidden md:block">
             <img className="iconos" src={ampliaPlantillas} alt="Woocommerce para 20 Productos"/>
             <h4>Woocommerce para 20 Productos</h4>
             <p>Integramos Woocommerce para gestionar hasta 20 productos, facilitando el comercio electrónico en su sitio.</p>
           </div>
-          <div className="column">
+          <div className="column hidden md:block">
             <img className="iconos" src={pasarela} alt="Pasarela de Pago con Todos los Métodos"/>
             <h4>Pasarela de Pago con Todos los Métodos</h4>
             <p>Incorporamos pasarelas de pago seguras para transacciones sin complicaciones en su sitio web.</p>

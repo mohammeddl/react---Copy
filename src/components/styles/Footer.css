@@ -14,9 +14,7 @@
   .textos-footer {
     display: flex;
     justify-content: space-between;
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-top: 10px;
+    margin: 18px;
   }
   
   .seccion-texto-footer {
@@ -133,7 +131,7 @@
       }
     
       .textos-footer {
-        flex-direction: column;
+        flex-wrap: wrap;
         gap: 20px;
       }
      

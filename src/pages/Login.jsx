@@ -15,7 +15,6 @@ export default function Login() {
     setOverlayVisible(!overlayVisible);
   };
 
-  // JSX
   return (
     <div>
       <main className='main'>
@@ -27,17 +26,13 @@ export default function Login() {
           </section>
 
           <section className='usuario'>
-            <div className='contenedor_opciones-usuario'>
-              <div className='texto_opciones-usuario'>
-                <div className='opciones_no_registrado'>
-                  <h2 className='titulo_no_registrado'>
-                    ¿No tienes una cuenta? Regístrate
-                  </h2>
-                  <p id='p-registro' className='texto_no_registrado'>
-                    Regístrate para ver nuestras Ofertas.
-                  </p>
+            <div className='contenedor_opciones-usuario md:flex md:justify-center md:items-center md:w-4/5 md:mx-auto md:h-5/6 md:bg-neutral-light'>
+              <div className='texto_opciones-usuario hidden md:flex md:justify-between md:w-full md:bg-primario md:rounded-3xl'>
+                <div className='opciones_no_registrado md:w-2/3 md:p-10 md:text-neutral-light md:rounded-xl'>
+                  <h2 className='titulo_no_registrado text-lg'>¿No tienes una cuenta? Regístrate</h2>
+                  <p id='p-registro' className='texto_no_registrado text-sm'>Regístrate para ver nuestras Ofertas.</p>
                   <button
-                    className='registro_no_registrado'
+                    className='registro_no_registrado mt-7 border-2 border-neutral-light rounded-lg py-3 px-8 text-neutral-light uppercase transition duration-200 hover:bg-neutral-light hover:text-acento'
                     id='boton_registro'
                     name='registro'
                     onClick={toggleForm}>
@@ -45,13 +40,11 @@ export default function Login() {
                   </button>
                 </div>
 
-                <div className='opciones_registrado'>
-                  <h2 className='titulo_registrado'>¿Tienes una cuenta?</h2>
-                  <p className='texto_registrado'>
-                    Inicia tu sesión y empieza a contratar tu servicio.
-                  </p>
+                <div className='opciones_registrado md:w-2/3 md:p-10 md:text-neutral-light md:rounded-xl'>
+                  <h2 className='titulo_registrado text-lg'>¿Tienes una cuenta?</h2>
+                  <p className='texto_registrado text-sm'>Inicia tu sesión y empieza a contratar tu servicio.</p>
                   <button
-                    className='inicio_sesion_registrado'
+                    className='inicio_sesion_registrado mt-7 border-2 border-neutral-light rounded-lg py-3 px-8 text-neutral-light uppercase transition duration-200 hover:bg-neutral-light hover:text-acento'
                     id='boton_inicio_sesion'
                     name='iniciar'
                     onClick={toggleForm}>
@@ -61,99 +54,99 @@ export default function Login() {
               </div>
 
               <div
-                className={`formularios_opciones-usuario ${formVisible ? 'Left' : 'Right'}`}
+                className={`formularios_opciones-usuario ${formVisible ? 'Left' : 'Right'} md:absolute md:top-1/2 md:left-8 md:w-1/2 md:bg-neutral-light md:rounded-lg md:shadow-lg md:transform md:transition-transform md:duration-300`}
                 id='formularios_opciones-usuario'>
-                <div className='formulario_inicio_sesion'>
-                  <h2 className='titulo_formulario'>Iniciar sesión</h2>
+                <div className='formulario_inicio_sesion relative md:opacity-100 md:visible'>
+                  <h2 className='titulo_formulario text-2xl font-bold uppercase text-primario mb-11'>Iniciar sesión</h2>
                   <form className='formulario_form'>
                     <fieldset className='fieldset_formulario'>
-                      <div className='campo_formulario'>
+                      <div className='campo_formulario mb-2'>
                         <input
                           name='email'
                           id='correo_electronico1'
                           type='email'
                           placeholder='Correo electrónico'
-                          className='entrada_campo_formulario'
+                          className='entrada_campo_formulario p-2 mb-2 w-full'
                         />
                       </div>
                       <span id='correoError'></span>
-                      <div className='campo_formulario'>
+                      <div className='campo_formulario mb-2'>
                         <input
                           name='password'
                           id='contraseña1'
                           type='password'
                           placeholder='Contraseña'
-                          className='entrada_campo_formulario'
+                          className='entrada_campo_formulario p-2 mb-2 w-full'
                         />
                       </div>
                       <span id='contraseñaError'></span>
                     </fieldset>
-                    <div className='botones_formulario'>
-                      <button type='button' className='boton_olvido'>
+                    <div className='botones_formulario flex justify-between items-center mt-9'>
+                      <button type='button' className='boton_olvido text-sm text-acento underline transition duration-200 hover:text-primario'>
                         ¿Olvidaste la contraseña?
                       </button>
                       <button
                         type='submit'
                         id='submitLogin'
-                        className='accion_botones_formulario'>
+                        className='accion_botones_formulario bg-acento rounded-lg py-3 px-8 text-primario uppercase text-sm transition duration-200 hover:bg-acento-light'>
                         Iniciar sesión
                       </button>
                     </div>
                   </form>
                 </div>
 
-                <div className='formulario_registro'>
-                  <h2 className='titulo_formulario'>Regístrate</h2>
+                <div className='formulario_registro relative md:opacity-0 md:invisible md:transform md:translate-x-28'>
+                  <h2 className='titulo_formulario text-2xl font-bold uppercase text-primario my-6 md:mb-11'>Regístrate</h2>
                   <form className='formulario_form'>
                     <fieldset className='fieldset_formulario'>
-                      <div className='campo_formulario'>
+                      <div className='campo_formulario mb-2'>
                         <input
                           type='text'
                           id='nombre_completo'
                           name='nombre_completo'
                           placeholder='Nombre completo'
-                          className='entrada_campo_formulario'
+                          className='entrada_campo_formulario p-2 mb-2 w-full'
                           required
                         />
                       </div>
-                      <div className='campo_formulario'>
+                      <div className='campo_formulario mb-2'>
                         <input
                           type='email'
                           id='correo_electronico'
                           name='correo_electronico'
                           placeholder='Correo electrónico'
-                          className='entrada_campo_formulario'
+                          className='entrada_campo_formulario p-2 mb-2 w-full'
                           required
                         />
                       </div>
-                      <div className='campo_formulario'>
+                      <div className='campo_formulario mb-2'>
                         <input
                           type='password'
                           id='contraseña'
                           name='contraseña'
                           placeholder='Contraseña'
-                          className='entrada_campo_formulario'
+                          className='entrada_campo_formulario p-2 mb-2 w-full'
                           required
                         />
                       </div>
-                      <div className='campo_formulario'>
+                      <div className='campo_formulario mb-2'>
                         <input
                           type='password'
                           id='contraseña_confirmation'
                           name='contraseña_confirmation'
                           placeholder='Confirmar contraseña'
-                          className='entrada_campo_formulario'
+                          className='entrada_campo_formulario p-2 mb-2 w-full'
                           required
                         />
                       </div>
                       <span id='errorPassword'></span>
                     </fieldset>
-                    <div className='botones_formulario'>
+                    <div className='botones_formulario flex justify-end mt-9'>
                       <input
                         type='submit'
                         id='submitRegistro'
                         value='Regístrate'
-                        className='accion_botones_formulario'
+                        className='accion_botones_formulario bg-acento rounded-lg py-3 px-8 text-primario uppercase text-sm transition duration-200 hover:bg-acento-light'
                       />
                     </div>
                   </form>

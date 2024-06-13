@@ -1,5 +1,10 @@
 import "./styles/Footer.css";
 import logo from "../assets/logo.png";
+import facebook from "../assets/icons/socials/facebook.svg";
+import instagram from "../assets/icons/socials/instagram.svg";
+import tiktok from "../assets/icons/socials/tiktok.svg";
+import twitter from "../assets/icons/socials/twitter.svg";
+import youtube from "../assets/icons/socials/youtube.svg";
 export default function Footer() {
   return (
     <>
@@ -11,7 +16,7 @@ export default function Footer() {
               ∧
             </button>
 
-            <div className='textos-footer'>
+            <div className='textos-footer  '>
               <div className='seccion-texto-footer sobre-nosotros'>
                 <h3>Sofware Pymes</h3>
                 <ul>
@@ -59,7 +64,7 @@ export default function Footer() {
 
               <div className='barra-divisoria-footer'></div>
 
-              <div className='seccion-texto-footer Software'>
+              <div className='seccion-texto-footer Software hidden md:block'>
                 <h3>Apps</h3>
                 <ul>
                   <li>Software Abogados</li>
@@ -68,7 +73,7 @@ export default function Footer() {
               </div>
             </div>
 
-            <nav className='sitemap'>
+            <nav className='sitemap '>
               <ul>
                 <li>
                   <a href='#'>Condiciones generales</a>
@@ -106,35 +111,35 @@ export default function Footer() {
                   <div className='twitter-wrapper'>
                     <img
                       className='icono-social-footer'
-                      src='assets/icons/socials/twitter.svg'
+                      src={twitter}
                       alt='twitter'
                     />
                   </div>
                   <div className='instagram-wrapper'>
                     <img
                       className='icono-social-footer'
-                      src='assets/icons/socials/instagram.svg'
+                      src={instagram}
                       alt='instagram'
                     />
                   </div>
                   <div className='youtube-wrapper'>
                     <img
                       className='icono-social-footer'
-                      src='assets/icons/socials/youtube.svg'
+                      src={youtube}
                       alt='youtube'
                     />
                   </div>
                   <div className='tiktok-wrapper'>
                     <img
                       className='icono-social-footer'
-                      src='assets/icons/socials/tiktok.svg'
+                      src={tiktok}
                       alt='tiktok'
                     />
                   </div>
                   <div className='facebook-wrapper'>
                     <img
                       className='icono-social-footer'
-                      src='assets/icons/socials/facebook.svg'
+                      src={facebook}
                       alt='facebook'
                     />
                   </div>
