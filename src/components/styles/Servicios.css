@@ -60,7 +60,7 @@
   .row {
     display: flex;
     flex-wrap: wrap; /* Permitir que las tarjetas se envuelvan en múltiples líneas */
-    gap: 50px;
+    gap: 20px;
     justify-content: space-between;
     margin-bottom: 30px;
   }
@@ -100,6 +100,7 @@
   .card .info-card h4 {
     margin-bottom: 4px; /* Reducir el margen inferior de los elementos */
     font-size: small;
+    color:white;
   }
   
   .card .info-card .precio {

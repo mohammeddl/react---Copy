@@ -77,7 +77,7 @@ export default function Servicios() {
         <div className='container'>
           <div className='row'>
             {data.map((servicio) => (
-              <div key={servicio.id} className='card'>
+              <div key={servicio.id} className='card mx-8'>
                 <img src={servicio.imagen} alt={servicio.nombre} />
                 <div className='info-card'>
                   <h3>{servicio.nombre}</h3>

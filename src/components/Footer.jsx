@@ -91,7 +91,6 @@ export default function Footer() {
             </nav>
 
             <div className='logo--redes-sociales'>
-              <div className='barra-divisoria-footer--segundo-wrapper hidden'></div>
 
               <div className='logo-wrapper-footer'>
                 <a href='index.html'>
@@ -106,8 +105,8 @@ export default function Footer() {
               <div className='barra-divisoria-footer--segundo-wrapper hidden'></div>
 
               <div className='redes-sociales'>
-                <h4>Síguenos en:</h4>
                 <div className='redes-sociales-iconos'>
+                <h4>Síguenos en:</h4>
                   <div className='twitter-wrapper'>
                     <img
                       className='icono-social-footer'

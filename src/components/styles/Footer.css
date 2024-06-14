@@ -142,7 +142,7 @@
       }
     
       .logo--redes-sociales {
-        flex-direction: column;
+        justify-content: space-between;
         gap: 20px;
       }
     
@@ -163,6 +163,7 @@
     @media (max-width: 1000px) {
       .footer {
         padding: 60px 10%;
+  
       }
     }
     
