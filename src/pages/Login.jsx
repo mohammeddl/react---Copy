@@ -32,9 +32,9 @@ export default function Login() {
                   <h2 className='titulo_no_registrado text-lg'>¿No tienes una cuenta? Regístrate</h2>
                   <p id='p-registro' className='texto_no_registrado text-sm'>Regístrate para ver nuestras Ofertas.</p>
                   <button
-                    className='registro_no_registrado mt-7 border-2 border-neutral-light rounded-lg py-3 px-8 text-neutral-light uppercase transition duration-200 hover:bg-neutral-light hover:text-acento'
+                    className='registro_no_registrado mt-7 border-1 border-neutral-light rounded-lg  text-neutral-light uppercase transition duration-200 hover:bg-neutral-light hover:text-acento'
                     id='boton_registro'
-                    name='registro'
+                    
                     onClick={toggleForm}>
                     Regístrate
                   </button>
@@ -44,11 +44,11 @@ export default function Login() {
                   <h2 className='titulo_registrado text-lg'>¿Tienes una cuenta?</h2>
                   <p className='texto_registrado text-sm'>Inicia tu sesión y empieza a contratar tu servicio.</p>
                   <button
-                    className='inicio_sesion_registrado mt-7 border-2 border-neutral-light rounded-lg py-3 px-8 text-neutral-light uppercase transition duration-200 hover:bg-neutral-light hover:text-acento'
+                    className='registro_no_registrado mt-7 border-1 border-neutral-light rounded-lg  text-neutral-light uppercase transition duration-200 hover:bg-neutral-light hover:text-acento'
                     id='boton_inicio_sesion'
                     name='iniciar'
                     onClick={toggleForm}>
-                    Iniciar sesión
+                    Iniciar sesiónn
                   </button>
                 </div>
               </div>
@@ -88,7 +88,7 @@ export default function Login() {
                       <button
                         type='submit'
                         id='submitLogin'
-                        className='accion_botones_formulario bg-acento rounded-lg py-3 px-8 text-primario uppercase text-sm transition duration-200 hover:bg-acento-light'>
+                        className='accion_botones_formulario bg-acento rounded-lg text-primario uppercase text-sm transition duration-200 hover:bg-acento-light'>
                         Iniciar sesión
                       </button>
                     </div>
@@ -96,7 +96,7 @@ export default function Login() {
                 </div>
 
                 <div className='formulario_registro relative md:opacity-0 md:invisible md:transform md:translate-x-28'>
-                  <h2 className='titulo_formulario text-2xl font-bold uppercase text-primario my-6 md:mb-11'>Regístrate</h2>
+                  <h2 className='titulo_formulario text-2xl font-bold uppercase text-primario  mb-4'>Regístrate</h2>
                   <form className='formulario_form'>
                     <fieldset className='fieldset_formulario'>
                       <div className='campo_formulario mb-2'>
@@ -105,7 +105,7 @@ export default function Login() {
                           id='nombre_completo'
                           name='nombre_completo'
                           placeholder='Nombre completo'
-                          className='entrada_campo_formulario p-2 mb-2 w-full'
+                          className='entrada_campo_formulario p-2 w-full'
                           required
                         />
                       </div>
@@ -115,17 +115,17 @@ export default function Login() {
                           id='correo_electronico'
                           name='correo_electronico'
                           placeholder='Correo electrónico'
-                          className='entrada_campo_formulario p-2 mb-2 w-full'
+                          className='entrada_campo_formulario p-2  w-full'
                           required
                         />
                       </div>
-                      <div className='campo_formulario mb-2'>
+                      <div className='campo_formulario '>
                         <input
                           type='password'
                           id='contraseña'
                           name='contraseña'
                           placeholder='Contraseña'
-                          className='entrada_campo_formulario p-2 mb-2 w-full'
+                          className='entrada_campo_formulario p-2  w-full'
                           required
                         />
                       </div>
@@ -135,18 +135,18 @@ export default function Login() {
                           id='contraseña_confirmation'
                           name='contraseña_confirmation'
                           placeholder='Confirmar contraseña'
-                          className='entrada_campo_formulario p-2 mb-2 w-full'
+                          className='entrada_campo_formulario p-2  w-full'
                           required
                         />
                       </div>
                       <span id='errorPassword'></span>
                     </fieldset>
-                    <div className='botones_formulario flex justify-end mt-9'>
+                    <div className='botones_formulario flex justify-end '>
                       <input
                         type='submit'
                         id='submitRegistro'
                         value='Regístrate'
-                        className='accion_botones_formulario bg-acento rounded-lg py-3 px-8 text-primario uppercase text-sm transition duration-200 hover:bg-acento-light'
+                        className='accion_botones_formulario bg-acento rounded-lg md:py-1 py-4 px-2 text-primario uppercase text-sm transition duration-200 hover:bg-acento-light'
                       />
                     </div>
                   </form>

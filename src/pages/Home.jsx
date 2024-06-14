@@ -234,7 +234,7 @@ const Home = () => {
         </section>
       </div>
       <div className="card-container">
-        <h1>QUE OPINAN NUESTROS CLIENTES</h1>
+        <h1 className="card-p">QUE OPINAN NUESTROS CLIENTES</h1>
         <div className="reseñas-container">
           <div className="reseñas">
             <div className="star-rating">★★★★★</div>

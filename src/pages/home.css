@@ -268,6 +268,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: var(--Raleway-extrabold);
 }
 
 .container-accordion .accordion h1 {
@@ -335,6 +336,7 @@ font-family: var(--Raleway-extrabold);  display: flex;
   padding-bottom: 20px;
   margin: 0 auto; 
   max-width: 1440px; 
+  font-family: var(--Raleway-extrabold);
 }
 
 .card-container h1 {

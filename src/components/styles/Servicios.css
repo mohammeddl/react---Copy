@@ -1,239 +1,60 @@
-.slice.triangle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 80px;
-    position: relative;
-    background-color: var(--primario);
-    flex-direction: column;
-  }
-  
-  /* Triángulo */
-  .slice.triangle::after {
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top-color: var(--primario);
-    border-top-style: solid;
-    border-top-width: 20px;
-    content: "";
-    position: absolute;
-    bottom: -20px; 
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  /* Texto */
-  .slice.triangle h1 {
-    color: var(--neutral-light);
-    font-weight: 300;
-    margin: 0;
-    text-align: center;
-  }
 
-  /************************ Slice Media query para pantallas pequeñas************  */
-  @media (max-width: 768px) {
-    .slice.triangle {
-      height: 60px; /* Reducir la altura para pantallas pequeñas */
-    }
-  
-    /* Reducir el tamaño del triángulo para pantallas pequeñas */
-    .slice.triangle::after {
-      border-top-width: 10px;
-      bottom: -10px;
-    }
-  
-    /* Ajustar tamaño del texto para pantallas pequeñas */
-    .slice.triangle h1 {
-      font-size: 14px;
-    }
-  }
-  
-  .container {
-    max-width: 1100px;
-    margin: 40px auto;
-    padding: 20px;
+:root {
+  /* paleta de colores */
+  --primario-light: #E8EDF2;
+  --primario-light-hover: #DCE4EC;
+  --primario-light-active: #B6C7D8;
+  --primario: #2850be;
+  --primario-hover: #134273;
+  --primario-active:#2850be;
+  ;
+  --primario-dark: #103760;
+  --primario-dark-hover: #0D2C4D;
+  --primario-dark-active: #09213A;
+  --primario-darkest: #071A2D;
+
+  --neutral-light: #F1F1F1;
+  --neutral-light-hover: #EBEBEB;
+  --neutral-light-active: #D5D5D5;
+  --neutral: #777;
+  --neutral-hover: #6B6B6B;
+  --neutral-active: #5F5F5F;
+  --neutral-dark: #595959;
+  --neutral-dark-hover: #474747;
+  --neutral-dark-active: #363636;
+  --neutral-darkest: #2A2A2A;
+
+  --acento: #F0B011;
+
+  /* ----------------------------------------------------------- */
+
+  /* fuentes de letra */
+  --Raleway-regular: 'Raleway regular', sans-serif;
+  --Raleway-extrabold: 'Raleway extrabold', sans-serif;
+
+  --Roboto-bold: 'Roboto bold', sans-serif;
+  --Roboto-bolditalic: 'Roboto bolditalic', sans-serif;
+  --Roboto-medium: 'Roboto medium', sans-serif;
+  --Roboto-regular: 'Roboto regular', sans-serif;
+  --Roboto-semibold: 'Roboto semibold', sans-serif;
 
 
-  }
-  
-  .row {
-    display: flex;
-    flex-wrap: wrap; /* Permitir que las tarjetas se envuelvan en múltiples líneas */
-    gap: 20px;
-    justify-content: space-between;
-    margin-bottom: 30px;
-  }
-  
-  .card {
-    flex: 1 1 calc(25% - 10px); /* Ajustar el ancho para hacer los cards más pequeños */
-    background-color: var(--neutral-light);
-    /* Reducir el padding para ajustar mejor el tamaño */
-    box-sizing: border-box;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(3, 32, 112, 0.5);
-    text-align: center;
-  }
-  
-  .card img {
-    width: 50%;
-    border-radius: 5px;
-    margin-bottom: 8px; /* Reducir el margen inferior de la imagen */
-    padding: 4px; /* Reducir el padding de la imagen */
-  }
-  
-  .card img:hover {
-    transform: scale(1.01);
-  }
-  
-  .card h3 {
-    margin: 0;
-    margin-bottom: 8px; /* Reducir el margen inferior del título */
-    color: white;
-  }
-  
-  .card .info-card {
-    padding: 8px; /* Reducir el padding interno */
-  }
-  
-  .card .info-card p, 
-  .card .info-card h4 {
-    margin-bottom: 4px; /* Reducir el margen inferior de los elementos */
-    font-size: small;
-    color:white;
-  }
-  
-  .card .info-card .precio {
-    font-size: 18px;
-    font-family: var(--Roboto-extrabold);
-    color: yellow;
-    text-align: right;
-    margin-right: 10px;
-    padding: 10px;
-  }
-  
-  .card .info-card .precio span {
-    font-weight: 800;
-    text-align: left;
-  }
-  
-  .button,
-  button,
-  input[type="button"] {
-    display: inline-block;
-    height: 30px; /* Reducir la altura del botón */
-    width: 140px; /* Reducir el ancho del botón */
-    padding: 0 12px; /* Reducir el padding del botón */
-    color: var(--neutral-light);
-    text-align: center;
-    font-size: 14px; 
-    font-weight: 600;
-    line-height: 30px; /* Ajustar la altura de línea */
-    letter-spacing: .1rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    white-space: nowrap;
-    background-color: transparent;
-    border-radius: 4px;
-    border: 1px solid var(--neutral-light);
-    cursor: pointer;
-    box-sizing: border-box;
-  }
-  
-  .button:hover,
-  button:hover {
-    color: var(--neutral-light);
-    border-color: var(--neutral-light-dark);
-    outline: 0;
-  }
-  
-  .button.button-primary,
-  input[type="button"].button-primary {
-    background-color: var(--acento);
-    color: var(--neutral-light);
-  }
-  
-  .button.button-primary:hover,
-  input[type="button"].button-primary:hover,
-  .button.button-primary:focus,
-  input[type="button"].button-primary:focus {
-    background-color: var(--primario);
-  }
-  
-  .u-full-width {
-    width: 100px;
-    height: 100px;
-  }
-  
-  .agregar-carrito {
-    margin: 6px 0; /* Reducir el margen del botón */
-  }
-  
-  .borrar-producto {
-    background-color: var(--acento);
-    border-radius: 50%;
-    padding: 3px 6px; /* Reducir el padding del botón */
-    text-decoration: none;
-    color: var(--primario);
-    font-weight: bold;
-  }
-  
-  ul {
-    list-style: none;
-  }
-  
-  .texto {
-    font-size: 14px; 
-    font-family: var(--Roboto-regular);
-    color: var(--primario);
-    text-align: center;
-    padding: 5px;
-  }
-  
-  th,
-  td {
-    padding: 6px 8px; /* Reducir el padding de las celdas de la tabla */
-    text-align: left;
-    border-bottom: 1px solid var(--primario);
-  }
-  
-  th:first-child,
-  td:first-child {
-    padding-left: 0;
-  }
-  
-  th:last-child,
-  td:last-child {
-    padding-right: 0;
-  }
-  
-  /* Ajustes de Flexbox para media queries */
-  /* Ajustes para pantallas de hasta 1024px */
-  @media (max-width: 1000px) {
-    .card {
-      flex: 1 1 calc(48% - 10px); /* Ajustar a dos cards por fila */
-    }
-  }
-  /* Ajustes para pantallas de hasta 768px */
-  
-  @media (max-width: 768px) {
-    .card {
-      flex: 1 1 calc(48% - 10px); /* Ajustar a dos cards por fila */
-    }
-    .agregar-carrito {
-      width: 100%;
-      font-size: 10px; 
-      padding: 3px 12px; 
-    }
-  }
-  /* Ajustes para pantallas de hasta 550px */
-  
-  @media (max-width: 550px) {
-    .card {
-      flex: 1 1 calc(100% - 10px); 
-    }
-    .agregar-carrito {
-      font-size: 10px; 
-    }
-  }
-  
+}
+.text{
+      color: var(--primario);
+      font-size: 28px;
+      font-family: var(--Raleway-extrabold);
+}
+.textp{
+  font-size: 14px;
+color:var(--primario-active);
+
+}
+
+.contratar{
+  background-color: var(--acento);
+
+}
+.slice{
+  font-family: var(--Raleway-extrabold);
+}

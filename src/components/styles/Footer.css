@@ -126,9 +126,7 @@
     /* ---------------------------------------------------------------------------------------------------------------- */
     
     @media (max-width: 1270px) {
-      .contenido-footer {
-        flex-direction: column;
-      }
+
     
       .textos-footer {
         flex-wrap: wrap;
@@ -170,6 +168,13 @@
     @media (max-width: 600px) {
       .footer {
         padding: 60px 5%;
+      }
+      .sitemap ul {
+        display: flex;
+        justify-content: space-evenly; 
+        margin: 5; 
+        text-align: center;
+      
       }
     }
   

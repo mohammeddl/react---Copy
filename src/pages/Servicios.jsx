@@ -47,47 +47,62 @@ export default function Servicios() {
       precio: 200,
       imagen: servicio2,
       descripcion: "Marketing para tu negocio.",
-    },{
-      id: 7,
-      nombre: "Diseño Web",
-      precio: 500,
-      imagen: "https://via.placeholder.com/150",
-      descripcion: "Diseño de páginas web para tu negocio.",
-    },{
-      id: 8,
-      nombre: "Publicidad",
-      precio: 300,
-      imagen: "https://via.placeholder.com/150",
-      descripcion: "Publicidad para tu negocio.",
-    },{
-      id: 9,
-      nombre: "Marketing",
-      precio: 200,
-      imagen: "https://via.placeholder.com/150",
-      descripcion: "Marketing para tu negocio.",
-    }
+    },
+    // {
+    //   id: 7,
+    //   nombre: "Diseño Web",
+    //   precio: 500,
+    //   imagen: "https://via.placeholder.com/150",
+    //   descripcion: "Diseño de páginas web para tu negocio.",
+    // },{
+    //   id: 8,
+    //   nombre: "Publicidad",
+    //   precio: 300,
+    //   imagen: "https://via.placeholder.com/150",
+    //   descripcion: "Publicidad para tu negocio.",
+    // },{
+    //   id: 9,
+    //   nombre: "Marketing",
+    //   precio: 200,
+    //   imagen: "https://via.placeholder.com/150",
+    //   descripcion: "Marketing para tu negocio.",
+    // }
   ];
 
   return (
     <>
-      <main className='main'>
-        <section className='slice triangle'>
+      <main>
+        <div className='slice triangle'>
           <h1>Contrata un Servicio y Aumenta tu Venta por Internet</h1>
-        </section>
-        <div className='container'>
-          <div className='row'>
-            {data.map((servicio) => (
-              <div key={servicio.id} className='card mx-8'>
-                <img src={servicio.imagen} alt={servicio.nombre} />
-                <div className='info-card'>
-                  <h3>{servicio.nombre}</h3>
-                  <p>{servicio.descripcion}</p>
-                  <h4 className='precio'>${servicio.precio}</h4>
-                  <button className='button button-primary'>Contratar</button>
+        </div>
+        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <div className='grid gap-5 lg:grid-cols-3 sm:max-w-sm  lg:max-w-full '>
+          {data.map((servicio) => (
+            <div key={servicio.id} className='max-w-xs mx-auto '>
+              <img
+                src={servicio.imagen}
+                alt=''
+                className='object-cover object-center w-full rounded-t-md h-72'
+              />
+              <div className='flex flex-col justify-between py-6 '>
+                <div className=''>
+                  <h2 className=' text text-3xl pb-4 font-semibold tracking-wide'>
+                    {servicio.nombre}
+                  </h2>
+                  <p className='textp pb-4 font-semibold dark:text-gray-800'>
+                   {servicio.descripcion}
+                  </p>
                 </div>
+                <button
+                  type='button '
+                  className='contratar text-white flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md'>
+                  CONTRATAR
+                </button>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
+        </div>
+
         </div>
       </main>
     </>

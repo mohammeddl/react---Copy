@@ -65,7 +65,6 @@ input {
 
 input[type="submit"] {
     cursor: pointer;
-    margin-bottom: 10px;
 }
 
 input::-webkit-input-placeholder {
@@ -238,7 +237,7 @@ input::placeholder {
     margin-top: 30px;
     border: 3px solid var(--neutral-light);
     border-radius: 3px;
-    padding: 10px 30px;
+    padding: 5px 15px;
     color: var(--neutral-light);
     text-transform: uppercase;
     line-height: 1em;
@@ -273,7 +272,7 @@ input::placeholder {
 }
 
 .titulo_formulario {
-    margin-bottom: 45px;
+    margin-bottom: 5px;
     font-weight: 500;
     line-height: 1em;
     text-transform: uppercase;
@@ -308,8 +307,8 @@ input::placeholder {
 
 .accion_botones_formulario {
     background-color: var(--acento);
-    border-radius: 3px;
-    padding: 10px 35px;
+    border-radius: 4px;
+    padding: 8px 4px;
     font-size: 1rem;
     font-family: var(--Roboto-regular);
     font-weight: 300;
