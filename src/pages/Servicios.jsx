@@ -48,13 +48,7 @@ export default function Servicios() {
       imagen: servicio2,
       descripcion: "Marketing para tu negocio.",
     },
-    // {
-    //   id: 7,
-    //   nombre: "Diseño Web",
-    //   precio: 500,
-    //   imagen: "https://via.placeholder.com/150",
-    //   descripcion: "Diseño de páginas web para tu negocio.",
-    // },{
+   //{
     //   id: 8,
     //   nombre: "Publicidad",
     //   precio: 300,
